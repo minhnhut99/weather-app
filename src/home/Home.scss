@@ -1,0 +1,61 @@
+.home-weather {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 380px;
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+  background: #ece9e6; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #ffffff,
+    #ece9e6
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  .header {
+    h1 {
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+  }
+  .weather-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+  }
+  .bottom {
+    h3 {
+      font-size: 25px;
+    }
+    .search {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+      button {
+        cursor: pointer;
+        outline: none;
+        border: none;
+        font-size: 25px;
+        border-radius: 5px;
+        background-color: black;
+        color: white;
+        width: 80px;
+        display: block;
+        margin-left: -20px;
+        position: relative;
+        z-index: 200;
+      }
+    }
+  }
+}
